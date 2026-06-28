@@ -1,0 +1,13 @@
+Disease,Model,Accuracy,Precision,Recall,F1-score
+Diabetes,Logistic Regression,0.708,0.6,0.5,0.545
+Diabetes,Random Forest (tuned),0.747,0.653,0.593,0.621
+Diabetes,Neural Network,0.714,0.604,0.537,0.569
+Diabetes,Ensemble,0.708,0.596,0.519,0.554
+Heart Disease,Logistic Regression,0.803,0.769,0.909,0.833
+Heart Disease,Random Forest (tuned),0.82,0.762,0.97,0.853
+Heart Disease,Neural Network,0.77,0.721,0.939,0.816
+Heart Disease,Ensemble,0.803,0.769,0.909,0.833
+Breast Cancer,Logistic Regression,0.965,0.975,0.929,0.951
+Breast Cancer,Random Forest (tuned),0.974,1.0,0.929,0.963
+Breast Cancer,Neural Network,0.974,0.976,0.952,0.964
+Breast Cancer,Ensemble,0.991,1.0,0.976,0.988

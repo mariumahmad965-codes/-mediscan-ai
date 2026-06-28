@@ -1,0 +1,210 @@
+{
+  "disease_key": "breast_cancer",
+  "feature_names": [
+    "mean radius",
+    "mean texture",
+    "mean perimeter",
+    "mean area",
+    "mean smoothness",
+    "mean compactness",
+    "mean concavity",
+    "mean concave points",
+    "mean symmetry",
+    "mean fractal dimension",
+    "radius error",
+    "texture error",
+    "perimeter error",
+    "area error",
+    "smoothness error",
+    "compactness error",
+    "concavity error",
+    "concave points error",
+    "symmetry error",
+    "fractal dimension error",
+    "worst radius",
+    "worst texture",
+    "worst perimeter",
+    "worst area",
+    "worst smoothness",
+    "worst compactness",
+    "worst concavity",
+    "worst concave points",
+    "worst symmetry",
+    "worst fractal dimension"
+  ],
+  "best_k": 2,
+  "silhouette_scores": {
+    "2": 0.34338224069077805,
+    "3": 0.3143840098608098,
+    "4": 0.28330544840954164,
+    "5": 0.15821041754355697
+  },
+  "anomaly_threshold": 0.7455676754372798,
+  "rf_best_params": {
+    "max_depth": null,
+    "min_samples_split": 2,
+    "n_estimators": 100
+  },
+  "results_table": [
+    {
+      "Model": "Logistic Regression",
+      "Accuracy": 0.965,
+      "Precision": 0.975,
+      "Recall": 0.929,
+      "F1-score": 0.951
+    },
+    {
+      "Model": "Random Forest (tuned)",
+      "Accuracy": 0.974,
+      "Precision": 1.0,
+      "Recall": 0.929,
+      "F1-score": 0.963
+    },
+    {
+      "Model": "Neural Network",
+      "Accuracy": 0.974,
+      "Precision": 0.976,
+      "Recall": 0.952,
+      "F1-score": 0.964
+    },
+    {
+      "Model": "Ensemble",
+      "Accuracy": 0.991,
+      "Precision": 1.0,
+      "Recall": 0.976,
+      "F1-score": 0.988
+    }
+  ],
+  "cv_scores": {
+    "Logistic Regression": [
+      0.9824561403508771,
+      0.9824561403508771,
+      0.9736842105263158,
+      0.9736842105263158,
+      0.9911504424778761
+    ],
+    "Random Forest (tuned)": [
+      0.9210526315789473,
+      0.9385964912280702,
+      0.9824561403508771,
+      0.9649122807017544,
+      0.9646017699115044
+    ]
+  },
+  "roc_data": {
+    "Logistic Regression": {
+      "fpr": [
+        0.0,
+        0.0,
+        0.0,
+        0.013888888888888888,
+        0.013888888888888888,
+        0.1388888888888889,
+        0.1388888888888889,
+        1.0
+      ],
+      "tpr": [
+        0.0,
+        0.023809523809523808,
+        0.9285714285714286,
+        0.9285714285714286,
+        0.9761904761904762,
+        0.9761904761904762,
+        1.0,
+        1.0
+      ],
+      "auc": 0.996
+    },
+    "Random Forest (tuned)": {
+      "fpr": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.041666666666666664,
+        0.041666666666666664,
+        0.08333333333333333,
+        0.08333333333333333,
+        0.09722222222222222,
+        0.125,
+        0.1527777777777778,
+        0.19444444444444445,
+        0.20833333333333334,
+        0.2361111111111111,
+        0.2777777777777778,
+        0.3333333333333333,
+        0.375,
+        0.5277777777777778,
+        1.0
+      ],
+      "tpr": [
+        0.0,
+        0.42857142857142855,
+        0.5238095238095238,
+        0.6428571428571429,
+        0.7142857142857143,
+        0.9285714285714286,
+        0.9285714285714286,
+        0.9523809523809523,
+        0.9523809523809523,
+        0.9761904761904762,
+        0.9761904761904762,
+        0.9761904761904762,
+        0.9761904761904762,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "auc": 0.993
+    },
+    "Neural Network": {
+      "fpr": [
+        0.0,
+        0.0,
+        0.0,
+        0.013888888888888888,
+        0.013888888888888888,
+        0.06944444444444445,
+        0.06944444444444445,
+        1.0
+      ],
+      "tpr": [
+        0.0,
+        0.21428571428571427,
+        0.9523809523809523,
+        0.9523809523809523,
+        0.9761904761904762,
+        0.9761904761904762,
+        1.0,
+        1.0
+      ],
+      "auc": 0.998
+    },
+    "Ensemble": {
+      "fpr": [
+        0.0,
+        0.0,
+        0.0,
+        0.19444444444444445,
+        0.19444444444444445,
+        1.0
+      ],
+      "tpr": [
+        0.0,
+        0.023809523809523808,
+        0.9761904761904762,
+        0.9761904761904762,
+        1.0,
+        1.0
+      ],
+      "auc": 0.995
+    }
+  }
+}
